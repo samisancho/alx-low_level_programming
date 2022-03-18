@@ -1,14 +1,14 @@
-#include "main.h"
-#include <stdio.h>
+ #include "main.h"
 
 /**
- * main - check the code
+ * _isdigit - 1 if c is a digit
+ * @c: input value
  *
- * Return: Always 0.
+ * Description: checks for a digit (0 through 9).
+ * Return: Always (0).
  */
-int main(void)
+
+int _isdigit(int c)
 {
-   int _isdigit(int c){
 	return (c >= '0' && c <= '9');
-}
 }
