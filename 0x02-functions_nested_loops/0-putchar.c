@@ -1,24 +1,21 @@
 #include "main.h"
-
 /**
- * main - prints a word
+ *main - entry point
  *
- * Description: just prints a statement
- * Return: Always(0) Success
+ *Description: prints Holberton followed by a newline
+ *
+ *Return: returns 0(successful)
+ *
  */
-
 int main(void)
 {
-	_putchar('H');
-	_putchar('o');
-	_putchar('l');
-	_putchar('b');
-	_putchar('e');
-	_putchar('r');
-	_putchar('t');
-	_putchar('o');
-	_putchar('n');
-	_putchar('\n');
+	char holbText[9] = "Holberton";
+	int i;
 
+	for (i = 0; i < 9; i++)
+	{
+		_putchar(holbText[i]);
+	}
+	_putchar('\n');
 	return (0);
 }
