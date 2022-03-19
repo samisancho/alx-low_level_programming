@@ -9,10 +9,10 @@
  */
 int main(void)
 {
-	char holbText[9] = "_putchar";
+	char holbText[8] = "_putchar";
 	int i;
 
-	for (i = 0; i < 9; i++)
+	for (i = 0; i < 8; i++)
 	{
 		_putchar(holbText[i]);
 	}
