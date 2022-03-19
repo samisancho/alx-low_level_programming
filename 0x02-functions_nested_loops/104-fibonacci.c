@@ -1,25 +1,34 @@
 #include <stdio.h>
+
 /**
- *main - entry point
+ * main - prints fibonnaci numbers
  *
- *Description:prints first 98 fibonnacci numbers
- *
- *Return: zero(success)
- *
+ * Description: prints from 1 to 98
+ * Return: Always(0) Success
  */
+
 int main(void)
 {
-	long int i, t1 = 1, t2 = 2, sum = 0;
+	int num1, num2, i, n;
+	int next_num;
 
-	for (i = 1; i < 98; i++)
+	n = 98;
+
+	for (i = 1; i <= n; i++)
 	{
-		printf("%ld, ", t1);
-		sum = t1 + t2;
-		t1 = t2;
-		t2 = sum;
-		if (i == 97)
+		if (i == 98)
 		{
-			printf("%ld\n", t1);
+			printf("%d, ", num2);
+		}
+		else
+		{
+			printf("%d, ", num2);
+			next_num = num1 + num2;
+			num1 = num2;
+			num2 = next_num;
 		}
 	}
+	printf("\n");
+
+	return (0);
 }
