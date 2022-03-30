@@ -1,39 +1,39 @@
 #include "main.h"
-
 /**
- * is_prime - find a prime number
- * @i: input int i
- * @j: input int j
- * Return: boolean val of the state of inputs
+ *_prime - returns 1 if no. is prime
+ *
+ *@f: input
+ *@p:input
+ *Return:1 - prime ,0- otherwise
+ *
  */
-
-int is_prime(int i, int j)
+int _prime(int f, int p)
 {
-	if (j == 1)
+	if (p < 2 || p % f == 0)
+	{
+		return (0);
+	}
+	else if (f > p / 2)
 	{
 		return (1);
 	}
-	if (i % j == 0)
+	else
 	{
-		return (0);
+		return (_prime(f + 1, p));
 	}
-	return (is_prime(i, j - 1));
 }
-
- /**
-  * is_prime_number - printing prime numbers
-  * @n: input integer value
-  *
-  * Description: returns 1 if the input integer is a
-  * prime number, otherwise return 0
-  * Return: returns the state of the inout value
-  */
-
+/**
+ *is_prime_number - returns 1 if a number is prime
+ *
+ *@n:input
+ *Return: 1-prime,0-otherwise
+ *
+ */
 int is_prime_number(int n)
 {
-	if (n < 3)
+	if (n == 2)
 	{
-		return (0);
+		return (1);
 	}
-	return (is_prime(n, n - 1));
+	return (_prime(2, n));
 }
