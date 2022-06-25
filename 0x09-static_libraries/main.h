@@ -1,5 +1,5 @@
-#ifndef FILE_SAMI
-#define FILE_SAMI
+#ifndef FILE_HOLBERTON
+#define FILE_HOLBERTON
 
 /*copy list from task*/
 
@@ -25,4 +25,3 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
 #endif
-© 2022 GitHub, Inc.
